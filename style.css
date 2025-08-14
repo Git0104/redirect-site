@@ -83,5 +83,17 @@ footer {
   background-color: #333;
   color: white;
   text-align: center;
+
+
   padding: 10px;
+}
+
+.text-button {
+  background-color: transparent; /* 背景なし */
+  color: white;                  /* 文字色 */
+  border: none;                  /* 枠なし */
+  padding: 10px 20px;            /* クリック範囲を広げる */
+  text-decoration: none;         /* 下線なし */
+  cursor: pointer;               /* マウスオーバーで指マーク */
+  transition: color 0.3s;        /* ホバー時の変化 */
 }
