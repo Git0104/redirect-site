@@ -160,17 +160,13 @@ header {
 
 /* スマホ用 */
 @media (max-width: 600px) {
-  .nav-buttons {
-    display: none;          /* 最初は隠す */
-    flex-direction: column; /* 縦並び */
-    gap: 10px;
-    background-color: #333;
-    position: absolute;
-    top: 60px;
-    right: 20px;
-    padding: 10px;
-    border-radius: 6px;
+  .hamburger {
+    display: flex; /* スマホで表示 */
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
   }
+}
 
   .hamburger {
     display: flex;
