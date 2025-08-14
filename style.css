@@ -29,6 +29,12 @@ header h1 {
   color: white;
 }
 
+.header-container h1 {
+  margin: 0;
+  font-size: 24px;
+  color: white;
+}
+
 .button {
  position: absolute;
   left: 50%;               /* 親の横幅の50%地点 */
