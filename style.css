@@ -135,7 +135,7 @@ header {
 }
 
 /* スマホ用（画面幅600px以下） */
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .nav-buttons {
     display: none;           /* 最初は隠す */
     flex-direction: column;  /* 縦並び */
