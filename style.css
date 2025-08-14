@@ -1,117 +1,49 @@
-6/* style.css */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* ヘッダー全体 */
 header {
-  background-color: #333; /* ヘッダーの黒背景 */
+  background-color: #333;
   padding: 20px 40px;
-  display: flex;           /* 横並びにする */
-  align-items: center;     /* 縦中央 */
+  display: flex;               /* 横並び */
+  align-items: center;         /* 縦中央 */
   justify-content: space-between; /* 左右に分ける */
 }
 
-.header-left {
-  display: flex;       /* 横並び */
-  flex-direction: row;
-  align-items: center; /* 上下中央揃え */
-  gap: 50px;           /* 文字とボタンの間隔 */
-}
-
+/* 会社名 */
 .site-title {
   margin: 0;
   font-size: 24px;
   color: white;
 }
 
+/* ボタン群 */
 .nav-buttons {
-  display: flex;  /* 横並び */
-  gap: 15px;      /* ボタン同士の間隔 */
-}
-
-.header-container {
   display: flex;
-  align-items: center;
-  position: relative;
+  gap: 15px;  /* ボタン間隔 */
 }
 
-header h1 {
-  margin: 0;
-  font-size: 24px;
-  color: white;
-}
-
-.header-container h1 {
-  margin: 0;
-  font-size: 24px;
-  color: white;
-}
-
-
-
-.button {
-  padding: 10px 20px;
-  background-color: black;
+/* 文字だけボタン */
+.text-button {
+  position: relative;          /* 擬似要素用 */
+  background-color: transparent;
   color: white;
   text-decoration: none;
-  border-radius: 6px;
-  transition: background-color 0.3s;
-}
-
-.button:hover {
-  background-color: #444;
-}
-
-
-.hero {
-  background: url('hero.jpg') no-repeat center center;
-  background-size: cover;
-  color: white;
-  padding: 100px 20px;
-  text-align: center;
-}
-
-.about, .contact {
-  padding: 20px;
-  margin: 20px 0;
-}
-
-footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-
-
-  padding: 10px;
-}
-
-.text-button {
-  background-color: transparent; /* 背景なし */
-  color: white;                  /* 文字色 */
-  border: none;
   padding: 10px 20px;
-  text-decoration: none;         /* 元の下線を消す */
   cursor: pointer;
-  position: relative;            /* 下線の位置調整用 */
   transition: color 0.3s;
 }
 
-/* 下線を作る */
+/* 下線 */
 .text-button::after {
   content: "";
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 0%;                     /* 初期は線なし */
-  height: 2px;                   /* 線の太さ */
-  background-color: white;       /* 線の色 */
-  transition: width 0.3s;        /* アニメーション */
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s;
 }
 
-/* ホバーで線を表示 */
+/* ホバー時に下線を伸ばす */
 .text-button:hover::after {
-  width: 100%;                   /* 全幅に広げる */
+  width: 100%;
 }
