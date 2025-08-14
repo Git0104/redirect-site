@@ -5,6 +5,8 @@ header {
   display: flex;               /* 横並び */
   align-items: center;         /* 縦中央 */
   justify-content: space-between; /* 左右に分ける */
+  position: relative;
+  z-index: 10;
 }
 
 /* 会社名 */
