@@ -1,4 +1,4 @@
-/* style.css */
+6/* style.css */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -91,9 +91,27 @@ footer {
 .text-button {
   background-color: transparent; /* 背景なし */
   color: white;                  /* 文字色 */
-  border: none;                  /* 枠なし */
-  padding: 10px 20px;            /* クリック範囲を広げる */
-  text-decoration: none;         /* 下線なし */
-  cursor: pointer;               /* マウスオーバーで指マーク */
-  transition: color 0.3s;        /* ホバー時の変化 */
+  border: none;
+  padding: 10px 20px;
+  text-decoration: none;         /* 元の下線を消す */
+  cursor: pointer;
+  position: relative;            /* 下線の位置調整用 */
+  transition: color 0.3s;
+}
+
+/* 下線を作る */
+.text-button::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;                     /* 初期は線なし */
+  height: 2px;                   /* 線の太さ */
+  background-color: white;       /* 線の色 */
+  transition: width 0.3s;        /* アニメーション */
+}
+
+/* ホバーで線を表示 */
+.text-button:hover::after {
+  width: 100%;                   /* 全幅に広げる */
 }
