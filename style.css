@@ -25,13 +25,14 @@ header h1 {
 }
 
 .button {
+ position: absolute;
+  left: 50%;               /* 親の横幅の50%地点 */
+  transform: translateX(-50%); /* 自分の幅分だけ戻して中央に */
   padding: 10px 20px;
-  background-color: #000; /* 黒ボタン */
+  background-color: #000;
   color: white;
   text-decoration: none;
   border-radius: 6px;
-  transition: background-color 0.3s;
-  margin-left: 100px
 }
 
 .button:hover {
