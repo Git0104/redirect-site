@@ -47,3 +47,11 @@ header {
 .text-button:hover::after {
   width: 100%;
 }
+
+.hero {
+  background: url('hero.jpg') no-repeat center center;
+  background-size: cover;
+  color: white;
+  padding: 150px 40px; /* 上下150px、左右40pxに増やす */
+  text-align: center;
+}
