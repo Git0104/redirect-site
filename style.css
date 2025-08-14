@@ -52,6 +52,6 @@ header {
   background: url('hero.jpg') no-repeat center center;
   background-size: cover;
   color: white;
-  padding: 200px 40px; /* 上下150px、左右40pxに増やす */
+  padding: 330px 40px; /* 上下150px、左右40pxに増やす */
   text-align: center;
 }
