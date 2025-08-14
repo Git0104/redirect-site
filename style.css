@@ -15,7 +15,7 @@ header {
   display: flex;       /* 横並び */
   flex-direction: row;
   align-items: center; /* 上下中央揃え */
-  gap: 20px;           /* 文字とボタンの間隔 */
+  gap: 50px;           /* 文字とボタンの間隔 */
 }
 
 header h1 {
