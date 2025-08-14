@@ -9,9 +9,9 @@ body {
 header {
   background-color: #333; /* ヘッダーの黒背景 */
   padding: 20px 40px;
-  align-items: center; /* 縦方向中央 */
-  justify-content: center; /* 横方向中央 */
-  gap: 50px
+  display: flex;           /* 横並びにする */
+  align-items: center;     /* 縦中央 */
+  justify-content: space-between; /* 左右に分ける */
 }
 
 .header-left {
@@ -28,8 +28,8 @@ header {
 }
 
 .nav-buttons {
-  display: flex;
-  gap: 15px; /* ボタン同士の間隔 */
+  display: flex;  /* 横並び */
+  gap: 15px;      /* ボタン同士の間隔 */
 }
 
 .header-container {
@@ -49,6 +49,7 @@ header h1 {
   font-size: 24px;
   color: white;
 }
+
 
 
 .button {
