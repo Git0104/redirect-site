@@ -1,14 +1,16 @@
 6/* ヘッダー全体 */
 header {
-  position: relative;       /* 基本はrelativeでOK */
+  position: fixed;        /* 常に画面上部に固定 */
+  top: 0;
+  left: 0;
+  width: 100%;
   background-color: #333;
   padding: 20px 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  z-index: 10;              /* 前面表示 */
+  z-index: 1000;          /* ヒーローより前面 */
 }
-
 /* 会社名 */
 .site-title {
   margin: 0;
@@ -53,7 +55,7 @@ header {
   background: url('hero.jpg') no-repeat center center;
   background-size: cover;
   color: white;
-  padding: 250px 40px;      /* 上下余白を調整 */
+  padding: 250px 40px;    /* ヒーローの上下余白 */
+  margin-top: 80px;       /* ヘッダーの高さ分スペース確保 */
   text-align: center;
-  margin-top: 20px;         /* ヘッダーと重ならないように少しスペース */
 }
