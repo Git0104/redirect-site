@@ -7,40 +7,11 @@ body {
 }
 
 header {
-  padding: 20px 0; /* 上下余白だけ */
-  background-color: transparent; /* 全体は透明 */
-}
-
-.header-content {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  background-color: #333;   /* 文字とボタンの周りだけ黒 */
-  padding: 10px 40px;       /* 内側の余白 */
-  margin: 0 auto;            /* 左右中央寄せ */
-  max-width: 1200px;         /* 最大横幅 */
-  border-radius: 8px;        /* 好きなら角丸 */
-}
-
-header h1 {
-  margin: 0;
-  font-size: 24px;
+  background-color: #333;
   color: white;
+  padding: 20px;
+  text-align: center;
 }
-
-.button {
-  padding: 10px 20px;
-  background-color: #0000;
-  color: white;
-  text-decoration: none;
-  border-radius: 6px;
-  transition: background-color 0.3s;
-}
-
-.button:hover {
-  background-color: #0056b3;
-}
-
 
 .hero {
   background: url('hero.jpg') no-repeat center center;
@@ -58,6 +29,6 @@ header h1 {
 footer {
   background-color: #333;
   color: white;
-  text-align: left;
+  text-align: center;
   padding: 10px;
 }
