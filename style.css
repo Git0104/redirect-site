@@ -55,11 +55,3 @@ header {
   padding: 290px 40px; /* 上下150px、左右40pxに増やす */
   text-align: center;
 }
-
-footer {
-  background-color: black; /* 黒に変更 */
-  color: white;            /* 文字は白のまま */
-  text-align: left;
-  padding: 10px;
-}
-
