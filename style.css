@@ -21,7 +21,7 @@ header {
 /* ボタン群 */
 .nav-buttons {
   display: flex;
-  gap: 15px;  /* ボタン間隔 */
+  gap: 8px;  /* ボタン間隔 */
 }
 
 /* 文字だけボタン */
