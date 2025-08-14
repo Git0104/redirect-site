@@ -59,3 +59,130 @@ header {
   margin-top: 80px;       /* ヘッダーの高さ分スペース確保 */
   text-align: center;
 }
+
+/* ハンバーガーは初期非表示 */
+.hamburger {
+  display: none;
+}
+
+/* PC用ナビ */
+.nav-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+/* 文字ボタンは共通 */
+.text-button {
+  position: relative;
+  background-color: transparent;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.text-button::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s;
+}
+
+.text-button:hover::after {
+  width: 100%;
+}
+
+/* スマホ用 */
+@media (max-width: 600px) {
+  .nav-buttons {
+    display: none;          /* 最初は隠す */
+    flex-direction: column; /* 縦並び */
+    gap: 10px;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 10px;
+    border-radius: 6px;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+  }
+
+  .hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+  }
+}
+
+/* PC用ナビ */
+.nav-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+/* 文字ボタンは共通 */
+.text-button {
+  position: relative;
+  background-color: transparent;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.text-button::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s;
+}
+
+.text-button:hover::after {
+  width: 100%;
+}
+
+/* スマホ用 */
+@media (max-width: 600px) {
+  .nav-buttons {
+    display: none;          /* 最初は隠す */
+    flex-direction: column; /* 縦並び */
+    gap: 10px;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 10px;
+    border-radius: 6px;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+  }
+
+  .hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+  }
+}
