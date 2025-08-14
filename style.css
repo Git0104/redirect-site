@@ -1,12 +1,15 @@
 6/* ヘッダー全体 */
 header {
+  position: fixed;       /* 画面上部に固定 */
+  top: 0;
+  left: 0;
+  width: 100%;           /* 横幅いっぱい */
   background-color: #333;
   padding: 20px 40px;
-  display: flex;               /* 横並び */
-  align-items: center;         /* 縦中央 */
-  justify-content: space-between; /* 左右に分ける */
-  position: relative;
-  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;         /* ヒーローより前面 */
 }
 
 /* 会社名 */
