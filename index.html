@@ -9,6 +9,15 @@
 <body>
 <header>
   <h1 class="site-title">株式会社フェニックス</h1>
+
+  
+  <!-- ハンバーガーアイコン -->
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  
   <nav class="nav-buttons">
     <a href="urashitaphoenix.f5.si" class="text-button">ホーム</a>
     <a href="urashitaphoenix.f5.si/kaisya" class="text-button">会社情報</a>
@@ -31,14 +40,3 @@
   </footer>
 </body>
 </html>
-
-<body>
-  <!-- ページ内容 -->
-
-  <script>
-    function toggleMenu() {
-      const nav = document.querySelector('.nav-buttons');
-      nav.style.display = (nav.style.display === 'flex') ? 'none' : 'flex';
-    }
-  </script>
-</body>
