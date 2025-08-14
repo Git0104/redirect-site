@@ -13,6 +13,7 @@ header {
 
 .header-left {
   display: flex;       /* 横並び */
+  flex-direction: row;
   align-items: center; /* 上下中央揃え */
   gap: 20px;           /* 文字とボタンの間隔 */
 }
