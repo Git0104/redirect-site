@@ -139,6 +139,11 @@ header {
 
 /* スマホ用（画面幅600px以下） */
 @media (max-width: 800px) {
+    header {
+    padding: 20px 20px;
+    justify-content: space-between; /* 左ハンバーガー・右タイトル */
+  }
+
   .nav-buttons {
     display: none;           /* 最初は隠す */
     flex-direction: column;  /* 縦並び */
