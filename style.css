@@ -24,6 +24,7 @@ header {
 .nav-buttons {
   display: flex;
   gap: 8px;  /* ボタン間隔 */
+  margin-left: -10px;
 }
 
 /* 文字だけボタン */
