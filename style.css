@@ -155,7 +155,7 @@ header {
     background-color: #333;
     position: absolute;
     top: 60px;
-    right: 20px;
+    right: 0px;
     padding: 10px;
     border-radius: 6px;
   }
@@ -163,9 +163,10 @@ header {
   .hamburger {
     display: flex;
     order: 1;
-    position: absolute;  /* 絶対配置にする */
-    left: 20px;          /* padding と同じ値で画面内に収める */
+    position: absolute;  /* 絶対配置にする */ 
     top: 50%;
+    flex-direction: column;
+    gap: 5px;
     transform: translateY(-50%);
     z-index: 1010;
   }
