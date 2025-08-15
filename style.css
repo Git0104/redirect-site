@@ -133,6 +133,8 @@ header {
 /* ハンバーガー（初期は非表示） */
 .hamburger {
   display: none;
+  top: 50%;
+  right: 15px;
 }
 
 /* スマホ用（画面幅600px以下） */
