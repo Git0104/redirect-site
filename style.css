@@ -25,7 +25,7 @@ header {
   display: flex;
   gap: 8px;  /* ボタン間隔 */
   margin-left: -10px;
-  transform: translateX(-10px)
+  transform: translateX(-100px)
 }
 
 /* 文字だけボタン */
